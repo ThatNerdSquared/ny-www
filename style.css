@@ -11,10 +11,11 @@
 h1 {
     font-style: normal;
     font-weight: 400;
-    font-size: 15vh;
+    font-size: 12vh;
     text-align: center;
     color: #000000;
     font-family: 'Spectral';
+    line-height: 14vh;
 }
 
 
@@ -54,6 +55,8 @@ a:hover {
 
     width: 90%;
     height: 80%;
+    max-width: 5000px;
+    max-height: 5000px;
 
     margin-left: 50%;
     transform: translateX(-50%);
