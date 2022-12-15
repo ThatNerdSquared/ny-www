@@ -1,0 +1,28 @@
+.widget {
+    background: #FFFFFF;
+    box-shadow: 0px 4px 19px 0px rgba(0, 0, 0, 0.25) , -30px 30px 0px 0px #d1e4ff;
+    border-radius: 29px;
+    padding: 1rem;
+
+}
+
+.widget h1{
+    font-weight: normal;
+    font-style: italic;
+}
+
+.info-widget {
+    width: 20rem;
+    height: auto;
+}
+
+.nobr {
+    display: inline;
+}
+
+.header-bracket {
+    display: inline;
+    font-size: 2rem;
+    margin: 2px;
+    padding: 8px 8px 8px 8px;
+}
