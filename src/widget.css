@@ -16,6 +16,18 @@
     height: auto;
 }
 
+.projecttable-widget {
+    width: 60rem;
+    height: auto;
+}
+
+.project-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
+}
+
 .nobr {
     display: inline;
 }

@@ -1,6 +1,7 @@
 import "./App.css"
 import Intro from "./Intro"
 import Programming from "./Programming"
+import ProjectTable from "./ProjectTable"
 import Studies from "./Studies"
 import Writing from "./Writing"
 
@@ -11,6 +12,7 @@ function App() {
             <Programming />
             <Studies />
             <Writing />
+            <ProjectTable />
         </div>
     )
 }
