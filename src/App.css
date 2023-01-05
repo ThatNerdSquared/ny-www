@@ -45,3 +45,9 @@
     margin-top: 0rem;
   }
 }
+
+.projects {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}

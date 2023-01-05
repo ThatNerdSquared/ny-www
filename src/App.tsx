@@ -1,6 +1,8 @@
 import "./App.css"
 import Intro from "./Intro"
 import Programming from "./Programming"
+import ProjectCard from "./ProjectCard"
+import { projects } from "./projects"
 import ProjectTable from "./ProjectTable"
 import Studies from "./Studies"
 import Writing from "./Writing"
@@ -19,6 +21,11 @@ function App() {
                 </div>
             </div>
             {/* <ProjectTable /> */}
+            {/* <div className="projects">
+                {projects.map((project) => (
+                    <ProjectCard project={project} />
+                ))}
+            </div> */}
         </div>
     )
 }
