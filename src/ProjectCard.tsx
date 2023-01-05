@@ -16,7 +16,7 @@ function ProjectCard(props: {
                     <div style={{
                         display: "grid",
                         gridTemplateColumns: "auto auto",
-                        columnGap: "0.5em",
+                        columnGap: "0.3em",
                         borderRadius: "5px",
                         backgroundColor: STATUSES[props.project.status].background,
                         padding: "0.3em",
@@ -25,8 +25,8 @@ function ProjectCard(props: {
                         <div style={{
                             borderRadius: "50%",
                             backgroundColor: STATUSES[props.project.status].foreground,
-                            height: "0.8em",
-                            width: "0.8em",
+                            height: "0.6em",
+                            width: "0.6em",
                             display: "inline-block",
                             margin: "0"
                         }}/>

@@ -1,7 +1,10 @@
-import { Project, Status } from "./types"
+import { Project } from "./types"
 import timersSvg from "./assets/timers-for-raycast.svg"
 import peregrineSvg from "./assets/peregrine.svg"
 import blossomSvg from "./assets/blossom.svg"
+import sciDemosSvg from "./assets/scidemos.svg"
+import lentoSvg from "./assets/lento.svg"
+import hyperfocusSvg from "./assets/hyperfocus.png"
 
 export const projects: Project[] = [
     {
@@ -58,6 +61,69 @@ export const projects: Project[] = [
             {
                 displayText: "Try it out!",
                 url: "https://blossom.nathanyeung.ca/",
+            },
+        ],
+    },
+    {
+        id: "47bc7029-90d3-4b49-8bb9-940caaf83d01",
+        icon: sciDemosSvg,
+        name: "SciDemos",
+        // eslint-disable-next-line max-len
+        description: "SciDemos is a collection of small webpages I've built to explain concepts related science and scientific thinking in a simple, usually interactive way.",
+        status: "Active",
+        tags: ["bootstrap", "scicomm", "programming"],
+        links: [
+            {
+                displayText: "GitHub repo",
+                url: "https://github.com/ThatNerdSquared/scidemos",
+            },
+            {
+                displayText: "Try it out!",
+                url: "https://scidemos.nathanyeung.ca/",
+            },
+        ],
+    },
+    {
+        id: "ab93d5a9-db1f-4808-84d1-6b437a2c7b95",
+        icon: hyperfocusSvg,
+        name: "Hyperfocus",
+        // eslint-disable-next-line max-len
+        description: "A collaborative timer designed to make work sessions more productive and more enjoyable.",
+        status: "Dormant",
+        tags: [
+            "typescript",
+            "javascript",
+            "react",
+            "postgresql",
+            "programming"
+        ],
+        links: [
+            {
+                displayText: "GitHub repo",
+                url: "https://github.com/ThatNerdSquared/hyperfocus-app",
+            },
+            {
+                displayText: "Try it out!",
+                url: "https://hyperfocus.nathanyeung.ca/",
+            },
+        ],
+    },
+    {
+        id: "a4312982-d96e-4c02-818c-d5a8d53265cf",
+        icon: lentoSvg,
+        name: "Lento",
+        // eslint-disable-next-line max-len
+        description: "A modern distraction blocker for Windows and macOS, built with Python.",
+        status: "Dormant",
+        tags: ["python", "pyside6", "qt", "programming"],
+        links: [
+            {
+                displayText: "GitHub repo",
+                url: "https://github.com/lentoapp/lento",
+            },
+            {
+                displayText: "Learn more",
+                url: "https://lentoapp.github.io/",
             },
         ],
     },
