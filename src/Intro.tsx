@@ -1,9 +1,8 @@
-import Draggable from "react-draggable"
 import "./widget.css"
 
 function Intro() {
     return (
-        <Draggable>
+        <div className="">
             <div className="widget info-widget">
                 <h1>nathan yeung.</h1>
                 <p>Hey there! 👋</p>
@@ -21,7 +20,7 @@ function Intro() {
                     bioinformatics, music, and watches. */}
                 </p>
             </div>
-        </Draggable>
+        </div>
     )
 }
 

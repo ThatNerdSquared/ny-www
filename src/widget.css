@@ -3,7 +3,7 @@
     box-shadow: 0px 4px 19px 0px rgba(0, 0, 0, 0.25) , -30px 30px 0px 0px #d1e4ff;
     border-radius: 29px;
     padding: 1rem;
-
+    text-align: center;
 }
 
 .widget h1{
@@ -12,8 +12,9 @@
 }
 
 .info-widget {
-    width: 20rem;
-    height: auto;
+    min-width: 5rem;
+    max-width: 20rem;
+    height: max-content;
 }
 
 .projecttable-widget {

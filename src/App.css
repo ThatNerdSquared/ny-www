@@ -1,41 +1,47 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+.App {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  margin-top: 4rem;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.app-content {
+  display: grid;
+  grid-template-columns: 25rem 25rem;
+  column-gap: 2rem;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
+.left-col {
+  display: grid;
+  grid-template-rows: auto auto 1fr;
+  justify-items: right;
+  row-gap: 3rem;
+}
+
+.right-col {
+  display: grid;
+  grid-template-rows: auto auto 1fr;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  justify-items: left;
+  row-gap: 3rem;
+  margin-top: 5rem;
+}
+
+@media screen and (max-width: 53rem) {
+  .app-content {
+    grid-template-columns: 1fr;
+    row-gap: 0rem;
   }
-  to {
-    transform: rotate(360deg);
+
+  .left-col {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    justify-items: center;
   }
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
+  .right-col {
+    justify-items: center;
+    margin-top: 0rem;
   }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
 }
