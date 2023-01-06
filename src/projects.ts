@@ -6,6 +6,7 @@ import sciDemosSvg from "./assets/scidemos.svg"
 import lentoSvg from "./assets/lento.svg"
 import hyperfocusSvg from "./assets/hyperfocus.png"
 import ghSvg from "./assets/ghmark.svg"
+import globeSvg from "./assets/globe.svg"
 import { ActiveStatus, DormantStatus } from "./StatusBox"
 
 export const projects: Project[] = [
@@ -20,10 +21,12 @@ export const projects: Project[] = [
         links: [
             {
                 displayImg: ghSvg,
+                hoverText: "View on GitHub",
                 url: "https://github.com/ThatNerdSquared/timers-for-raycast",
             },
             {
-                displayText: "Raycast Store listing",
+                displayImg: globeSvg,
+                hoverText: "Raycast Store listing",
                 url: "https://www.raycast.com/ThatNerd/timers",
             },
         ],
@@ -39,12 +42,14 @@ export const projects: Project[] = [
         links: [
             {
                 displayImg: ghSvg,
+                hoverText: "View on GitHub",
                 url: "https://github.com/ThatNerdSquared/peregrine",
             },
-            {
-                displayText: "Learn more",
-                url: "https://peregrine.nathanyeung.ca/",
-            },
+            // {
+            //     displayImg: globeSvg,
+            //     hoverText: "Learn more",
+            //     url: "https://peregrine.nathanyeung.ca/",
+            // },
         ],
     },
     {
@@ -58,10 +63,12 @@ export const projects: Project[] = [
         links: [
             {
                 displayImg: ghSvg,
+                hoverText: "View on GitHub",
                 url: "https://github.com/ThatNerdSquared/blossom",
             },
             {
-                displayText: "Try it out!",
+                displayImg: globeSvg,
+                hoverText: "Try it out!",
                 url: "https://blossom.nathanyeung.ca/",
             },
         ],
@@ -77,10 +84,12 @@ export const projects: Project[] = [
         links: [
             {
                 displayImg: ghSvg,
+                hoverText: "View on GitHub",
                 url: "https://github.com/ThatNerdSquared/scidemos",
             },
             {
-                displayText: "Try it out!",
+                displayImg: globeSvg,
+                hoverText: "Try it out!",
                 url: "https://scidemos.nathanyeung.ca/",
             },
         ],
@@ -102,12 +111,14 @@ export const projects: Project[] = [
         links: [
             {
                 displayImg: ghSvg,
+                hoverText: "View on GitHub",
                 url: "https://github.com/ThatNerdSquared/hyperfocus-app",
             },
-            {
-                displayText: "Try it out!",
-                url: "https://hyperfocus.nathanyeung.ca/",
-            },
+            // {
+            //     displayImg: globeSvg,
+            //     hoverText: "Try it out!",
+            //     url: "https://hyperfocus.nathanyeung.ca/",
+            // },
         ],
     },
     {
@@ -121,10 +132,12 @@ export const projects: Project[] = [
         links: [
             {
                 displayImg: ghSvg,
+                hoverText: "View on GitHub",
                 url: "https://github.com/lentoapp/lento",
             },
             {
-                displayText: "Learn more",
+                displayImg: globeSvg,
+                hoverText: "Learn more",
                 url: "https://lentoapp.github.io/",
             },
         ],

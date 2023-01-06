@@ -15,6 +15,7 @@ export type Tag = "writing" |
 
 export interface Link {
     displayImg: string;
+    hoverText: string;
     url: string;
 }
 

@@ -1,3 +1,17 @@
+.projectcard {
+    overflow: hidden;
+    box-shadow:
+        rgba(0, 0, 0, 0.20) 0px 4px 10px 0px,
+        rgb(204, 219, 232) 0px 0px 0px 0px inset,
+        rgba(128, 128, 128, 0.5) 0px 0px 0px 0px inset;
+    -webkit-transition: box-shadow 0.3s, max-height 0.5s ease-in-out;
+    -moz-transition: box-shadow 0.3s, max-height 0.5s ease-in-out;
+    transition: box-shadow 0.3s, max-height 0.5s ease-in-out;
+    background-color: #ffffff;
+    border-radius: 20px;
+    margin: 1rem;
+}
+
 .projectcard-wrapper {
     display: grid;
     grid-template-columns: auto 1fr;
@@ -6,15 +20,6 @@
     max-width: 30rem;
     height: max-content;
     padding: 1rem;
-    /* box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px; */
-    box-shadow:
-        rgba(0, 0, 0, 0.20) 0px 4px 10px 0px,
-        rgb(204, 219, 232) 0px 0px 0px 0px inset,
-        rgba(128, 128, 128, 0.5) 0px 0px 0px 0px inset;
-    transition: box-shadow 0.3s;
-    background-color: #ffffff;
-    border-radius: 20px;
-    margin: 1rem;
 }
 
 .projectcard-wrapper:hover {
@@ -50,8 +55,6 @@
     padding: 0.5em;
     margin-right: 0.5em;
     margin-top: 0.5em;
-    /* border-radius: 5px; */
-    /* box-shadow: 4px -4px 19px 0px rgba(0, 0, 0, 0.1) , -5px 5px 0px 0px #d1e4ff; */
     border-radius: 0.8em;
     border: 3px solid #d1e4ff;
     box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
@@ -62,4 +65,27 @@
     display: grid;
     grid-template-columns: auto auto 1fr;
     column-gap: 0.5em;
+}
+
+.links-pane {
+    display: grid;
+    grid-auto-flow: column;
+    align-content: center;
+    justify-content: center;
+    background-color: rgb(241, 241, 241);
+
+    max-height: 0;
+    overflow: hidden;
+    -webkit-transition: max-height 0.5s ease-in-out;
+    -moz-transition: max-height 0.5s ease-in-out;
+    transition: max-height 0.5s ease-in-out;
+}
+
+.links-pane img {
+    width: 4rem;
+    height: 4rem;
+}
+
+.projectcard:hover .links-pane {
+    max-height: 3rem;
 }
