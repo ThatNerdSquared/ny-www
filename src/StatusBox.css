@@ -1,0 +1,45 @@
+.statusbox {
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 0.3em;
+    border-radius: 5px;
+    padding: 0.3em;
+    align-items: center;
+}
+
+.statusbox p {
+    margin: 0;
+}
+
+.circle {
+    display: inline-block;
+    border-radius: 50%;
+    height: 0.6em;
+    width: 0.6em;
+    margin: 0;
+    align-items: center;
+}
+
+.active-bg-colour {
+    background-color: #abf4b4;
+}
+
+.active-fg-colour {
+    background-color: #509773;
+}
+
+.active-fg-text {
+    color: #509773;
+}
+
+.dormant-bg-colour {
+    background-color: #ffe148;
+}
+
+.dormant-fg-colour {
+    background-color: #ebb200;
+}
+
+.dormant-fg-text {
+    color: #ebb200;
+}

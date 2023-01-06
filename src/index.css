@@ -1,5 +1,16 @@
 :root {
   font-family: "Spectral";
+  background-image: url("./assets/bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  margin: -10px;
+  overflow-x: hidden;
+}
+
+h1{
+  font-weight: normal;
+  font-style: italic;
 }
 
 @font-face {

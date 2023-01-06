@@ -6,11 +6,6 @@
     text-align: center;
 }
 
-.widget h1{
-    font-weight: normal;
-    font-style: italic;
-}
-
 .info-widget {
     min-width: 5rem;
     max-width: 20rem;

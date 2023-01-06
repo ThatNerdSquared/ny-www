@@ -5,6 +5,8 @@ import blossomSvg from "./assets/blossom.svg"
 import sciDemosSvg from "./assets/scidemos.svg"
 import lentoSvg from "./assets/lento.svg"
 import hyperfocusSvg from "./assets/hyperfocus.png"
+import ghSvg from "./assets/ghmark.svg"
+import { ActiveStatus, DormantStatus } from "./StatusBox"
 
 export const projects: Project[] = [
     {
@@ -13,11 +15,11 @@ export const projects: Project[] = [
         name: "Timers for Raycast",
         // eslint-disable-next-line max-len
         description: "A lightweight, Raycast-native extension allowing you to start and stop countdown timers, stopwatches, and alarms.",
-        status: "Active",
+        status: ActiveStatus,
         tags: ["typescript", "react", "raycast", "programming"],
         links: [
             {
-                displayText: "GitHub repo",
+                displayImg: ghSvg,
                 url: "https://github.com/ThatNerdSquared/timers-for-raycast",
             },
             {
@@ -32,11 +34,11 @@ export const projects: Project[] = [
         name: "Peregrine",
         // eslint-disable-next-line max-len
         description: "Peregrine is a rapid, append-only logging and note-taking app, inspired by @thesephist's Inc.",
-        status: "Dormant",
+        status: DormantStatus,
         tags: ["python", "pyside6", "qt", "programming"],
         links: [
             {
-                displayText: "GitHub repo",
+                displayImg: ghSvg,
                 url: "https://github.com/ThatNerdSquared/peregrine",
             },
             {
@@ -51,11 +53,11 @@ export const projects: Project[] = [
         name: "Blossom",
         // eslint-disable-next-line max-len
         description: "A pocket of calm, anywhere, anytime. Webapp with Typescript, React, Vite. Mobile app using Ionic.",
-        status: "Active",
+        status: ActiveStatus,
         tags: ["typescript", "react", "ionic", "programming"],
         links: [
             {
-                displayText: "GitHub repo",
+                displayImg: ghSvg,
                 url: "https://github.com/ThatNerdSquared/blossom",
             },
             {
@@ -70,11 +72,11 @@ export const projects: Project[] = [
         name: "SciDemos",
         // eslint-disable-next-line max-len
         description: "SciDemos is a collection of small webpages I've built to explain concepts related science and scientific thinking in a simple, usually interactive way.",
-        status: "Active",
+        status: ActiveStatus,
         tags: ["bootstrap", "scicomm", "programming"],
         links: [
             {
-                displayText: "GitHub repo",
+                displayImg: ghSvg,
                 url: "https://github.com/ThatNerdSquared/scidemos",
             },
             {
@@ -89,7 +91,7 @@ export const projects: Project[] = [
         name: "Hyperfocus",
         // eslint-disable-next-line max-len
         description: "A collaborative timer designed to make work sessions more productive and more enjoyable.",
-        status: "Dormant",
+        status: DormantStatus,
         tags: [
             "typescript",
             "javascript",
@@ -99,7 +101,7 @@ export const projects: Project[] = [
         ],
         links: [
             {
-                displayText: "GitHub repo",
+                displayImg: ghSvg,
                 url: "https://github.com/ThatNerdSquared/hyperfocus-app",
             },
             {
@@ -114,11 +116,11 @@ export const projects: Project[] = [
         name: "Lento",
         // eslint-disable-next-line max-len
         description: "A modern distraction blocker for Windows and macOS, built with Python.",
-        status: "Dormant",
+        status: DormantStatus,
         tags: ["python", "pyside6", "qt", "programming"],
         links: [
             {
-                displayText: "GitHub repo",
+                displayImg: ghSvg,
                 url: "https://github.com/lentoapp/lento",
             },
             {

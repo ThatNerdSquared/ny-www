@@ -4,11 +4,11 @@ import "./widget.css"
 
 function ProjectTable() {
     return (
-        <div className="widget projecttable-widget">
-            <p className="header-bracket">[</p>
-            <h1 className="nobr">projects</h1>
-            <p className="header-bracket">]</p>
-            <div className="project-list">
+        <div className="projects">
+            <div className="project-pane">
+                <h1>projects</h1>
+            </div>
+            <div>
                 {projects.map((project) => (
                     <ProjectCard project={project} />
                 ))}

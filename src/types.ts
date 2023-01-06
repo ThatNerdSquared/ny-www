@@ -13,25 +13,8 @@ export type Tag = "writing" |
     "scicomm" |
     "ionic"
 
-export type Status = "Active" |
-    "Published" |
-    "ComingSoon" |
-    "Dormant" |
-    "Archived" |
-    "MajorUpgrade"
-
-export interface StatusColor {
-    background: string;
-    foreground: string;
-}
-
-export const STATUSES: Record<string,StatusColor> = {
-    "Active": { background: "#abf4b4", foreground: "#509773" },
-    "Dormant": { background: "#ffe148", foreground: "#ebb200" },
-}
-
 export interface Link {
-    displayText: string;
+    displayImg: string;
     url: string;
 }
 
@@ -40,7 +23,7 @@ export interface Project {
     icon: string;
     name: string;
     description: string;
-    status: Status
+    status: () => JSX.Element;
     tags: Tag[];
     links: Link[];
 }

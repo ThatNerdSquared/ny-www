@@ -1,40 +1,31 @@
-import { Project, STATUSES } from "./types"
+import { Project } from "./types"
 import "./ProjectCard.css"
 
 function ProjectCard(props: {
     project: Project
 }) {
     return (
-        <div className="projectcard-wrapper">
-            <img
-                className="project-icon"
-                src={props.project.icon}
-            />
+        <div className="projectcard-wrapper" key={props.project.id}>
+            <div>
+                <img
+                    className="project-icon"
+                    src={props.project.icon}
+                />
+                {props.project.links.map((item) => (
+                    <>
+                        <a
+                            href={item.url}
+                            target="_blank"
+                        >
+                            <img src={item.displayImg}/>
+                        </a><br/>
+                    </>
+                ))}
+            </div>
             <div className="project-metadata">
                 <div className="project-title">
                     <h3 className="project-text">{props.project.name}</h3>
-                    <div style={{
-                        display: "grid",
-                        gridTemplateColumns: "auto auto",
-                        columnGap: "0.3em",
-                        borderRadius: "5px",
-                        backgroundColor: STATUSES[props.project.status].background,
-                        padding: "0.3em",
-                        alignItems: "center",
-                    }}>
-                        <div style={{
-                            borderRadius: "50%",
-                            backgroundColor: STATUSES[props.project.status].foreground,
-                            height: "0.6em",
-                            width: "0.6em",
-                            display: "inline-block",
-                            margin: "0"
-                        }}/>
-                        <p style={{
-                            color: STATUSES[props.project.status].foreground,
-                            margin: "0"
-                        }}>{props.project.status}</p>
-                    </div>
+                    <props.project.status />
                 </div>
                 <p className="project-text">{props.project.description}</p>
                 <div className="project-tag-grid">
