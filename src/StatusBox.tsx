@@ -1,4 +1,4 @@
-import "./statusbox.css"
+import "./StatusBox.css"
 
 export const ActiveStatus = () => {
     return (
