@@ -21,8 +21,17 @@ function App() {
             <ProjectTable />
             <div className="footer">
                 <p>
-                    © 2021-{new Date().getFullYear()}{' '}
-                    || Made with ❤️ and 🫖 by Nathan Yeung
+                    © 2021-{new Date().getFullYear()} —{" "}
+                    Made with ❤️ and 🫖 by Nathan Yeung —{" "}
+                    (
+                    <a
+                        href="https://github.com/ThatNerdSquared"
+                        target="_blank"
+                    >GitHub</a>) (
+                    <a
+                        href="https://buymeacoffee.com/nathanyeung"
+                        target="_blank"
+                    >Buy Me a Coffee</a>)
                 </p>
             </div>
         </div>
