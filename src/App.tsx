@@ -19,6 +19,12 @@ function App() {
                 </div>
             </div>
             <ProjectTable />
+            <div className="footer">
+                <p>
+                    © 2021-{new Date().getFullYear()}{' '}
+                    || Made with ❤️ and 🫖 by Nathan Yeung
+                </p>
+            </div>
         </div>
     )
 }
