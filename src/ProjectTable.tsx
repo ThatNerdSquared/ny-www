@@ -4,7 +4,7 @@ import "./widget.css"
 
 function ProjectTable() {
     return (
-        <div className="projects">
+        <div>
             <div className="project-pane">
                 <h1>projects</h1>
             </div>

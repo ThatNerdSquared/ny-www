@@ -9,7 +9,10 @@
     transition: box-shadow 0.3s, max-height 0.5s ease-in-out;
     background-color: #ffffff;
     border-radius: 20px;
-    margin: 1rem;
+    max-width: 30rem;
+    margin-bottom: 1rem;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .projectcard-wrapper {

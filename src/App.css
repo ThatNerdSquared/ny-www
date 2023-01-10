@@ -17,19 +17,13 @@
   filter: blur(5px);
 }
 
-.App {
-  display: grid;
-  grid-template-columns: 1fr;
-  justify-items: center;
-  row-gap: 0.5rem;
-  max-height: calc(100vh - 4rem);
-}
-
 .app-content {
   display: grid;
   grid-template-columns: 25rem 25rem;
   column-gap: 2rem;
   padding-top: 4rem;
+  max-width: 52rem;
+  margin: auto;
 }
 
 .left-col {
@@ -43,15 +37,9 @@
   display: grid;
   grid-template-rows: auto auto 1fr;
   padding-left: 2rem;
-  padding-right: 2rem;
   justify-items: left;
   row-gap: 3rem;
   margin-top: 5rem;
-}
-
-.projects {
-  display: grid;
-  grid-template-columns: 1fr;
 }
 
 .project-pane {
@@ -67,8 +55,6 @@
   width: 100%;
   bottom: 0;
   margin-top: 2rem;
-  padding-right: 2rem;
-  padding-left: 2rem;
   text-align: center;
   align-items: center;
   background-color: #ffffff;
@@ -79,6 +65,11 @@
       rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
 }
 
+.footer p {
+  padding-right: 2vw;
+  padding-left: 2vw;
+}
+
 @media screen and (max-width: 53rem) {
   .app-content {
     grid-template-columns: 1fr;
@@ -87,7 +78,6 @@
 
   .left-col {
     padding-left: 2rem;
-    padding-right: 2rem;
     justify-items: center;
   }
 
