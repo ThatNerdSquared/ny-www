@@ -1,9 +1,9 @@
-import "./widget.css"
+import widgetCss from "./widget.module.css"
 
 function Intro() {
     return (
-        <div className="">
-            <div className="widget info-widget">
+        <div>
+            <div className={`${widgetCss.widget} ${widgetCss.infoWidget}`}>
                 <h1>nathan yeung.</h1>
                 <p>Hey there! 👋</p>
                 <p>

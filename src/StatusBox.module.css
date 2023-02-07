@@ -20,26 +20,26 @@
     align-items: center;
 }
 
-.active-bg-colour {
+.activeBgColour {
     background-color: #abf4b4;
 }
 
-.active-fg-colour {
+.activeFgColour {
     background-color: #509773;
 }
 
-.active-fg-text {
+.activeFgText {
     color: #509773;
 }
 
-.dormant-bg-colour {
+.dormantBgColour {
     background-color: #ffe148;
 }
 
-.dormant-fg-colour {
+.dormantFgColour {
     background-color: #ebb200;
 }
 
-.dormant-fg-text {
+.dormantFgText {
     color: #ebb200;
 }

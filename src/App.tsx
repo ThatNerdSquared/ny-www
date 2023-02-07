@@ -1,4 +1,4 @@
-import "./App.css"
+import appCss from "./App.module.css"
 import Intro from "./Intro"
 import Programming from "./Programming"
 import ProjectTable from "./ProjectTable"
@@ -7,19 +7,19 @@ import Writing from "./Writing"
 
 function App() {
     return (
-        <div className="App">
-            <div className="app-content">
-                <div className="left-col">
+        <div className={appCss.App}>
+            <div className={appCss.appContent}>
+                <div className={appCss.leftCol}>
                     <Intro />
                     <Writing />
                 </div>
-                <div className="right-col">
+                <div className={appCss.rightCol}>
                     <Programming />
                     <Studies />
                 </div>
             </div>
             <ProjectTable />
-            <div className="footer">
+            <div className={appCss.footer}>
                 <p>
                     © 2021-{new Date().getFullYear()} —{" "}
                     Made with ❤️ and 🫖 by Nathan Yeung —{" "}

@@ -1,12 +1,12 @@
-import "./widget.css"
+import widgetCss from "./widget.module.css"
 
 function Programming() {
     return (
         <div>
-            <div className="widget info-widget">
-                <p className="header-bracket">[</p>
-                <h1 className="nobr">programming</h1>
-                <p className="header-bracket">]</p>
+            <div className={`${widgetCss.widget} ${widgetCss.infoWidget}`}>
+                <p className={widgetCss.headerBracket}>[</p>
+                <h1 className={widgetCss.nobr}>programming</h1>
+                <p className={widgetCss.headerBracket}>]</p>
                 <p>
                     I mainly work with TypeScript, Python, and C++, as well as
                     technologies such as React, PySide, Flask, PostgreSQL, and

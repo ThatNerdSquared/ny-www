@@ -1,11 +1,11 @@
 import ProjectCard from "./ProjectCard"
 import { projects } from "./projects"
-import "./widget.css"
+import widgetCss from "./widget.module.css"
 
 function ProjectTable() {
     return (
         <div>
-            <div className="project-pane">
+            <div className={widgetCss.projectPane}>
                 <h1>projects</h1>
             </div>
             <div>

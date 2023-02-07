@@ -1,32 +1,38 @@
 import { Project } from "./types"
-import "./ProjectCard.css"
+import pcardCss from "./ProjectCard.module.css"
 
 function ProjectCard(props: {
     project: Project
 }) {
     return (
-        <div className="projectcard">
-            <div className="projectcard-wrapper" key={props.project.id}>
+        <div className={pcardCss.projectcard}>
+            <div className={pcardCss.projectcardWrapper} key={props.project.id}>
                 <div>
                     <img
-                        className="project-icon"
+                        className={pcardCss.projectIcon}
                         src={props.project.icon}
                     />
                 </div>
-                <div className="project-metadata">
-                    <div className="project-title">
-                        <h3 className="project-text">{props.project.name}</h3>
+                <div className={pcardCss.projectMetadata}>
+                    <div className={pcardCss.projectTitle}>
+                        <h3 className={pcardCss.projectText}>
+                            {props.project.name}
+                        </h3>
                         <props.project.status />
                     </div>
-                    <p className="project-text">{props.project.description}</p>
-                    <div className="project-tag-grid">
+                    <p className={pcardCss.projectText}>
+                        {props.project.description}
+                    </p>
+                    <div className={pcardCss.projectTagGrid}>
                         {props.project.tags.map((tag) => (
-                            <div className="project-tag" key={tag}>{tag}</div>
+                            <div className={pcardCss.projectTag} key={tag}>
+                                {tag}
+                            </div>
                         ))}
                     </div>
                 </div>
             </div>
-            <div className="links-pane">
+            <div className={pcardCss.linksPane}>
                 {props.project.links.map((item) => (
                     <a
                         key={item.url}

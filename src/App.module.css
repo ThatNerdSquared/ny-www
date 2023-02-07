@@ -17,7 +17,7 @@
   filter: blur(5px);
 }
 
-.app-content {
+.appContent {
   display: grid;
   grid-template-columns: 25rem 25rem;
   column-gap: 2rem;
@@ -26,26 +26,20 @@
   margin: auto;
 }
 
-.left-col {
+.leftCol {
   display: grid;
   grid-template-rows: auto auto 1fr;
   justify-items: right;
   row-gap: 3rem;
 }
 
-.right-col {
+.rightCol {
   display: grid;
   grid-template-rows: auto auto 1fr;
   padding-left: 2rem;
   justify-items: left;
   row-gap: 3rem;
   margin-top: 5rem;
-}
-
-.project-pane {
-  text-align: center;
-  font-size: 2rem;
-  color: white;
 }
 
 .footer {
@@ -71,17 +65,17 @@
 }
 
 @media screen and (max-width: 53rem) {
-  .app-content {
+  .appContent {
     grid-template-columns: 1fr;
     row-gap: 0rem;
   }
 
-  .left-col {
+  .leftCol {
     padding-left: 2rem;
     justify-items: center;
   }
 
-  .right-col {
+  .rightCol {
     justify-items: center;
     margin-top: 0rem;
   }

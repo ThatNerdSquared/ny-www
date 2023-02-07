@@ -1,11 +1,11 @@
-import "./widget.css"
+import widgetCss from "./widget.module.css"
 
 function Writing() {
     return (
-        <div className="widget info-widget">
-            <p className="header-bracket">[</p>
-            <h1 className="nobr">writing</h1>
-            <p className="header-bracket">]</p>
+        <div className={`${widgetCss.widget} ${widgetCss.infoWidget}`}>
+            <p className={widgetCss.headerBracket}>[</p>
+            <h1 className={widgetCss.nobr}>writing</h1>
+            <p className={widgetCss.headerBracket}>]</p>
             <p>
                 I'm most well known for my poetry and essays, although I
                 write on a variety of topics related to thought and what
