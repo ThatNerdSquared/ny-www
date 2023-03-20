@@ -3,7 +3,6 @@ import timersSvg from "./assets/timers-for-raycast.svg"
 import peregrineSvg from "./assets/peregrine.svg"
 import blossomSvg from "./assets/blossom.svg"
 import sciDemosSvg from "./assets/scidemos.svg"
-import lentoSvg from "./assets/lento.svg"
 import hyperfocusSvg from "./assets/hyperfocus.png"
 import ghSvg from "./assets/ghmark.svg"
 import globeSvg from "./assets/globe.svg"
@@ -120,26 +119,5 @@ export const projects: Project[] = [
             //     url: "https://hyperfocus.nathanyeung.ca/",
             // },
         ],
-    },
-    {
-        id: "a4312982-d96e-4c02-818c-d5a8d53265cf",
-        icon: lentoSvg,
-        name: "Lento",
-        // eslint-disable-next-line max-len
-        description: "A modern distraction blocker for Windows and macOS, built with Python.",
-        status: DormantStatus,
-        tags: ["python", "pyside6", "qt", "programming"],
-        links: [
-            {
-                displayImg: ghSvg,
-                hoverText: "View on GitHub",
-                url: "https://github.com/lentoapp/lento",
-            },
-            {
-                displayImg: globeSvg,
-                hoverText: "Learn more",
-                url: "https://lentoapp.github.io/",
-            },
-        ],
-    },
+    }
 ]
