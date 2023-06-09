@@ -19,6 +19,15 @@ function Intro() {
                     Also interested in poetry, science communication,
                     bioinformatics, music, and watches. */}
                 </p>
+                <p>
+                    If you enjoy my work, feel free to 🫖{" "}
+                    <a
+                        href="https://www.buymeacoffee.com/nathanyeung"
+                        target="_blank"
+                    >
+                        buy me some tea
+                    </a> :)
+                </p>
             </div>
         </div>
     )

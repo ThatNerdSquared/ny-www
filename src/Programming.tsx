@@ -8,10 +8,11 @@ function Programming() {
                 <h1 className={widgetCss.nobr}>programming</h1>
                 <p className={widgetCss.headerBracket}>]</p>
                 <p>
-                    I mainly work with TypeScript, Python, and C++, as well as
-                    technologies such as React, PySide, Flask, PostgreSQL, and
-                    Cloudflare Workers. I've worked with teams of engineers and
-                    built projects with over eight thousand users.
+                    I mainly work with TypeScript, Python, and Dart, as well as
+                    technologies such as React, PySide, Flask, Flutter,
+                    PostgreSQL, and Cloudflare Workers. I've worked with teams
+                    of engineers and built projects with over sixteen thousand
+                    users.
                 </p>
                 <p>
                     My work mainly comprises of tools that expand the way we
