@@ -11,7 +11,9 @@ export type Tag = "writing" |
     "qt" |
     "bootstrap" |
     "scicomm" |
-    "ionic"
+    "ionic" |
+    "flutter" |
+    "dart"
 
 export interface Link {
     displayImg: string;

@@ -1,6 +1,7 @@
 import { Project } from "./types"
 import timersSvg from "./assets/timers-for-raycast.svg"
 import peregrineSvg from "./assets/peregrine.svg"
+import breezeSvg from "./assets/breeze.svg"
 import blossomSvg from "./assets/blossom.svg"
 import sciDemosSvg from "./assets/scidemos.svg"
 import hyperfocusSvg from "./assets/hyperfocus.png"
@@ -36,8 +37,8 @@ export const projects: Project[] = [
         name: "Peregrine",
         // eslint-disable-next-line max-len
         description: "Peregrine is a rapid, append-only logging and note-taking app, inspired by @thesephist's Inc.",
-        status: DormantStatus,
-        tags: ["python", "pyside6", "qt", "programming"],
+        status: ActiveStatus,
+        tags: ["flutter", "dart", "programming"],
         links: [
             {
                 displayImg: ghSvg,
@@ -52,12 +53,32 @@ export const projects: Project[] = [
         ],
     },
     {
+        id: "90a5af91-6057-4ca4-b0ad-bb8a545840ca",
+        icon: breezeSvg,
+        name: "Breeze",
+        description: "extremely minimal todo app",
+        status: ActiveStatus,
+        tags: ["flutter", "dart", "programming"],
+        links: [
+            {
+                displayImg: ghSvg,
+                hoverText: "View on GitHub",
+                url: "https://github.com/ThatNerdSquared/breeze",
+            },
+            // {
+            //     displayImg: globeSvg,
+            //     hoverText: "Learn more",
+            //     url: "https://breeze.nathanyeung.ca/",
+            // },
+        ],
+    },
+    {
         id: "3277553f-c226-49db-8d4c-41d5d29bf9a8",
         icon: blossomSvg,
         name: "Blossom",
         // eslint-disable-next-line max-len
         description: "A pocket of calm, anywhere, anytime. Webapp with Typescript, React, Vite. Mobile app using Ionic.",
-        status: ActiveStatus,
+        status: DormantStatus,
         tags: ["typescript", "react", "ionic", "programming"],
         links: [
             {
@@ -78,7 +99,7 @@ export const projects: Project[] = [
         name: "SciDemos",
         // eslint-disable-next-line max-len
         description: "SciDemos is a collection of small webpages I've built to explain concepts related science and scientific thinking in a simple, usually interactive way.",
-        status: ActiveStatus,
+        status: DormantStatus,
         tags: ["bootstrap", "scicomm", "programming"],
         links: [
             {
