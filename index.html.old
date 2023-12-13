@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:title" content="nathan yeung.">
+    <meta property="og:description" content="I'm a student, programmer, and writer on the west coast of Canada.">
+    <meta property="og:image" content="https://nathanyeung.ca/ny-logo.png">
+    <meta property="og:url" content="https://nathanyeung.ca">
+    <title>nathan yeung.</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
