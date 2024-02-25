@@ -10,7 +10,7 @@ h1 {
 
 @font-face {
   font-family: 'Spectral';
-  src: url('fonts/Spectral-Regular.ttf'), url('fonts/Spectral-SemiBold.ttf') format('truetype');
+  src: url('../../fonts/Spectral-Regular.ttf'), url('../../fonts/Spectral-SemiBold.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }

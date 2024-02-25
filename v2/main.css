@@ -36,7 +36,7 @@ a:hover {
 
 @font-face {
     font-family: 'Spectral';
-    src: url('src/fonts/Spectral-Regular.ttf'), url('src/fonts/Spectral-SemiBold.ttf') format('truetype');
+    src: url('../fonts/Spectral-Regular.ttf'), url('../fonts/Spectral-SemiBold.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
