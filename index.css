@@ -34,9 +34,10 @@ a {
 }
 
 .bounded-content {
-    width: min(1100px, 80%);
-    margin-left: 18.5%;
-    margin-right: 1.5%;
+    width: min(1000px, 75%);
+    /*margin-left: 18%;*/
+    margin-right: max(4%, 50px);
+    margin-left: auto;
     justify-self: center;
 }
 
@@ -101,10 +102,17 @@ a {
 }
 
 .design-type-header {
-    font-family: 'Cedarville Cursive';
+    font-family: 'Academy Engraved LET';
+    font-style: italic;
     font-size: 84pt;
     line-height: 0%;
-    rotate: 12deg;
+    /* rotate: 12deg; */
+    z-index: 1;
+    margin-left: -16px;
+    margin-bottom: 16px;
+
+    rotate: 6deg;
+    width: 95%;
 }
 
 .dev-type-header {
@@ -113,9 +121,49 @@ a {
     font-size: 84pt;
     line-height: 0%;
     padding-top: 0%;
+    margin-top: 12px;
 }
 
 .dd-type-header-bottom {
     display: grid;
     grid-auto-flow: column;
+    grid-template-columns: min-content auto;
+    margin-top: 0%;
+
+    h1 {
+        margin-top: 0%;
+        margin-right: 0%;
+        font-size: 84pt;
+    }
+}
+
+.apps-section {
+    position: relative;
+    grid-template-columns: auto auto auto;
+}
+
+.timers-img {
+    width: 60%;
+}
+
+.peregrine-img {
+    position: absolute;
+    top: 32%;
+    left: 25%;
+    width: 50%;
+    z-index: 1;
+}
+
+.blossom-img {
+    position: absolute;
+    top: 89%;
+    left: 40%;
+    width: 60%;
+}
+
+.breeze-img {
+    position: absolute;
+    width: 30%;
+    top: 98%;
+    left: 10%;
 }
