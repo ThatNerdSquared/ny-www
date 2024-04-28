@@ -9,13 +9,28 @@ h1 {
     font-weight: 700;
     font-size: 48pt;
     line-height: 0%;
+    word-wrap: break-word;
+    white-space: normal;
 }
 
-h2 {
+h4 {
+    margin-top: 0.5em;
     font-weight: 300;
     font-size: 24pt;
     line-height: 0%;
     text-align: center;
+}
+
+h2 {
+    margin-top: 0%;
+    margin-bottom: 0%;
+    line-height: 100%;
+
+    font-weight: 300;
+    font-size: 36pt;
+    text-align: left;
+
+    align-self: center;
 }
 
 h3 {
@@ -138,32 +153,58 @@ a {
 }
 
 .apps-section {
-    position: relative;
-    grid-template-columns: auto auto auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: min(1500px, 100%);
+    justify-content: end;
+    margin-right: 0%;
+    margin-left: auto;
+    grid-template-rows: min-content;
+    /* grid-template-columns: auto auto auto; */
 }
 
-.timers-img {
-    width: 60%;
+
+.project-header {
+    display: grid;
+    grid-template-columns: 20% 50%;
+    grid-template-rows: min-content;
+    align-items: start;
+
+    img {
+        width: 100%
+    }
 }
 
-.peregrine-img {
-    position: absolute;
-    top: 32%;
-    left: 25%;
-    width: 50%;
-    z-index: 1;
+/*
+.project-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: min(1500px, 100%);
+    justify-content: end;
+    margin-right: 0%;
+    margin-left: auto;
+    grid-template-rows: min-content;
+}
+*/
+    .app-hero-img {
+        height: 32rem;
+        justify-self: right;
+    }
+
+    iframe {
+        width: 90%;
+        border-radius: 32px;
+    }
+
+.project-sidebar {
+    margin-right: 10%;
 }
 
-.blossom-img {
-    position: absolute;
-    top: 89%;
-    left: 40%;
-    width: 60%;
-}
-
-.breeze-img {
-    position: absolute;
-    width: 30%;
-    top: 98%;
-    left: 10%;
-}
+@media screen and (max-width: 768px) {
+      .apps-section {
+              grid-template-columns: 1fr;
+      }
+    .dev-and-design-box {
+              grid-template-columns: 1fr;
+      }
+  }
