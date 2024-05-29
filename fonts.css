@@ -28,3 +28,13 @@
     src: url('./fonts/Courier New.ttf') format('truetype');
     font-weight: 400;
 }
+@font-face {
+    font-family: 'Against';
+    src: url('./fonts/Against-Regular.otf') format('truetype');
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'DM Mono';
+    src: url('./fonts/DMMono-Regular.ttf') format('truetype');
+    font-weight: 400;
+}
