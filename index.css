@@ -307,6 +307,7 @@ a {
 
 .projects-header {
     display: grid;
+    position: relative;
     max-width: 35rem;
     justify-self: center;
 
@@ -325,4 +326,26 @@ a {
     .software {
         margin-left: 18rem;
     }
+}
+
+.top-corner-border {
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    border-left: 3px solid black;
+    border-top: 3px solid black;
+    /* border-radius: 32px;*/
+    left: -50px;
+    top: -80px;
+}
+
+.bottom-corner-border {
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    border-right: 3px solid black;
+    border-bottom: 3px solid black;
+    /* border-radius: 32px;*/
+    left: 650px;
+    top: 420px;
 }
