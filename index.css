@@ -334,7 +334,7 @@ a {
     height: 120px;
     border-left: 3px solid black;
     border-top: 3px solid black;
-    /* border-radius: 32px;*/
+    border-top-left-radius: 32px;
     left: -50px;
     top: -80px;
 }
@@ -345,7 +345,51 @@ a {
     height: 120px;
     border-right: 3px solid black;
     border-bottom: 3px solid black;
-    /* border-radius: 32px;*/
+    border-bottom-right-radius: 32px;
     left: 650px;
     top: 420px;
+}
+
+.project-title {
+    z-index: 10;
+    border: 1px solid black;
+    border-radius: 32px;
+    padding-left: 1.5rem;
+
+    h2 {
+        margin-bottom : 1.5rem;
+    }
+}
+
+.project-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 5px;
+
+    img {
+        width: 10rem;
+        height: auto;
+    }
+}
+
+.project-item {
+    border: 1px solid black;
+    border-radius: 32px;
+}
+
+.project-tags {
+    z-index: 10;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: end;
+    gap: 5px;
+}
+
+.project-tag {
+    font-size: 24pt;
+    font-family: 'DM Mono';
+    font-weight: 300;
+    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+    border: 1px solid black;
+    border-radius: 20px;
 }
