@@ -1,395 +1,72 @@
 body {
-    display: grid;
-    justify-content: center;
-    font-family: 'Spectral';
-    /* reset */
+  /* reset */
+  margin: 0;
+  display: grid;
+  justify-items: center;
+}
+
+#main-view {
+  max-width: 1400px;
+}
+
+#main-title {
+  font-size: 224px;
+  text-transform: uppercase;
+}
+
+#main-header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 50px;
+  padding: 158px 110px;
+  align-items: center;
+}
+
+#subtitle-box {
+  font-size: 42px;
+  background-color: #ffffff;
+  border: 3px solid #000000;
+  margin-right: 30px;
+
+  p {
+    text-align: center;
     margin: 0;
-    padding: 2rem 2rem 2rem 2rem;
-    background-color: #f9f8f7;
+  }
+}
+
+#about-column {
+  display: grid;
+  grid-auto-rows: auto auto auto 1fr;
+  grid-gap: 27px;
+}
+
+p {
+  font-family: 'Playfair';
+}
+
+#media-buttons {
+  display: grid;
+  grid-gap: 16px;
+  grid-template-columns: auto auto;
+  width: fit-content;
+  justify-self: end;
+
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 h1 {
-    font-size: clamp(32pt, 6vw, 72pt);
-    overflow-wrap: break-word;
-    white-space: normal;
-    font-family: 'Against';
-    text-transform: uppercase;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+  font-family: 'Imbue';
+  font-size: 100px;
+  font-variation-settings: 'opsz' 100;
+  font-weight: 400;
+  line-height: 88%;
+  margin: 0;
 }
 
-h4 {
-    margin-top: 0.5em;
-    font-weight: 300;
-    font-size: 24pt;
-    line-height: 0%;
-    text-align: center;
-}
-
-h2 {
-    font-family: 'Spectral';
-    margin-top: 0%;
-    margin-bottom: 0%;
-    line-height: 100%;
-
-    font-weight: 300;
-    font-size: 36pt;
-    text-align: left;
-
-    align-self: center;
-    font-style: italic;
-}
-
-h3 {
-    font-family: 'DM Mono';
-    font-weight: 300;
-    font-size: clamp(32pt, 6vw, 72pt);
-    text-transform: uppercase;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-}
-
-a {
-    font-size: 18pt;
-    width: 100%;
-}
-
-.main-view {
-    display: grid;
-    max-width: 96rem;
-    /*margin: 2rem 2rem 2rem 2rem;*/
-}
-
-.bounded-content {
-    width: min(1000px, 75%);
-    /*margin-left: 18%;*/
-    margin-right: max(4%, 50px);
-    margin-left: auto;
-    justify-self: center;
-}
-
-.content-box {
-    display: grid;
-    justify-items: center;
-    border: 2px solid black;
-}
-
-.line {
-    border-top: 2px solid black;
-    border-left: 2px solid black;
-    border-right: 2px solid black;
-}
-
-.divider {
-    border-left: 2px solid black;
-    border-right: 2px solid black;
-    height: 0.5rem;
-}
-
-.large-divider {
-    border-left: 2px solid black;
-    border-right: 2px solid black;
-    height: 3rem;
-}
-
-.header-box {
-    display: grid;
-    grid-template-rows: 55% auto 1fr;
-    height: min(32vw, 30rem);
-}
-
-.title-pill {
-    display: inline-grid;
-
-    grid-template-columns: auto 1fr;
-    column-gap: 2rem;
-    align-items: center;
-    img {
-        height: 6rem;
-        width: auto;
-    }
-
-    border: 1px solid black;
-    border-radius: 32px;
-    /*padding: 1rem 2rem 1rem 2rem;*/
-    padding-left: 2rem;
-    padding-right: 2rem;
-    background: linear-gradient(to right bottom, #ffffff38, #ffffff);
-
-    margin-right: 4rem;
-}
-
-.spacer {
-    height: 25vh;
-}
-
-.description {
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: end;
-    gap: 5px;
-    margin-bottom: 0.5rem;
-    /*
-    display: grid;
-    grid-auto-flow: column;
-    grid-template-columns: repeat(fit-content(50%));
-    */
-}
-
-.other-description {
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: end;
-    gap: 5px;
-    margin-bottom: 0.5rem;
-    /*
-    display: grid;
-    grid-auto-flow: column;
-    grid-template-columns: repeat(fit-content(50%));
-    */
-}
-
-
-.sub-description {
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: end;
-    gap: 5px;
-}
-
-@media screen and (max-width: 590px) {
-    .description {
-        flex-direction: column;
-    }
-
-    .spacer {
-        height: 1vh;
-    }
-}
-
-@media screen and (max-width: 530px) {
-    .title-pill {
-        margin-right: 0rem;
-        column-gap: 1vw;
-        padding-left: 1vw;
-        padding-right: 1vw;
-    }
-}
-
-.pill {
-    border: 1px solid black;
-    border-radius: 15px;
-    padding: 0.2rem 0.5rem 0.2rem 0.5rem;
-    background: linear-gradient(to right bottom, #ffffff38, #ffffff);
-    text-transform: uppercase;
-    font-family: 'DM Mono';
-    font-weight: 400;
-    font-size: 16pt;
-}
-
-.big-desc {
-    /*font-style: italic;*/
-    font-size: 24pt;
-    text-transform: lowercase;
-    font-family: 'Spectral';
-    font-weight: 300;
-}
-
-.links {
-    display: grid;
-    grid-template-columns: 1fr auto;
-    column-gap: 1rem;
-    text-align: right;
-}
-
-.dev-and-design-box {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 1rem;
-    height: min(40vw, 37rem);
-    align-items: center;
-    padding-left: 10%;
-    padding-right: 10%;
-}
-
-.design-type-header {
-    font-family: 'Academy Engraved LET';
-    font-style: italic;
-    font-size: 84pt;
-    line-height: 0%;
-    /* rotate: 12deg; */
-    z-index: 1;
-    margin-left: -16px;
-    margin-bottom: 16px;
-
-    rotate: 6deg;
-    width: 95%;
-}
-
-.dev-type-header {
-    /* padding-top: -30%; */
-    font-family: 'Courier New';
-    font-size: 84pt;
-    line-height: 0%;
-    padding-top: 0%;
-    margin-top: 12px;
-}
-
-.dd-type-header-bottom {
-    display: grid;
-    grid-auto-flow: column;
-    grid-template-columns: min-content auto;
-    margin-top: 0%;
-
-    h1 {
-        margin-top: 0%;
-        margin-right: 0%;
-        font-size: 84pt;
-    }
-}
-
-.apps-section {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    width: min(1500px, 100%);
-    justify-content: end;
-    margin-right: 0%;
-    margin-left: auto;
-    grid-template-rows: min-content;
-    /* grid-template-columns: auto auto auto; */
-}
-
-
-.project-header {
-    display: grid;
-    grid-template-columns: 20% 50%;
-    grid-template-rows: min-content;
-    align-items: start;
-
-    img {
-        width: 100%
-    }
-}
-
-/*
-.project-section {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    width: min(1500px, 100%);
-    justify-content: end;
-    margin-right: 0%;
-    margin-left: auto;
-    grid-template-rows: min-content;
-}
-*/
-    .app-hero-img {
-        height: 32rem;
-        justify-self: right;
-    }
-
-    iframe {
-        width: 90%;
-        border-radius: 32px;
-    }
-
-.project-sidebar {
-    margin-right: 10%;
-}
-
-@media screen and (max-width: 768px) {
-      .apps-section {
-              grid-template-columns: 1fr;
-      }
-    .dev-and-design-box {
-              grid-template-columns: 1fr;
-      }
-  }
-
-.projects-header {
-    display: grid;
-    position: relative;
-    max-width: 35rem;
-    justify-self: center;
-
-    h1 {
-        margin-left: 4rem;
-    }
-
-    .yet {
-        margin-left: 10rem;
-    }
-
-    h3 {
-        margin-left: 6rem;
-    }
-
-    .software {
-        margin-left: 18rem;
-    }
-}
-
-.top-corner-border {
-    position: absolute;
-    width: 120px;
-    height: 120px;
-    border-left: 3px solid black;
-    border-top: 3px solid black;
-    border-top-left-radius: 32px;
-    left: -50px;
-    top: -80px;
-}
-
-.bottom-corner-border {
-    position: absolute;
-    width: 120px;
-    height: 120px;
-    border-right: 3px solid black;
-    border-bottom: 3px solid black;
-    border-bottom-right-radius: 32px;
-    left: 650px;
-    top: 420px;
-}
-
-.project-title {
-    z-index: 10;
-    border: 1px solid black;
-    border-radius: 32px;
-    padding-left: 1.5rem;
-
-    h2 {
-        margin-bottom : 1.5rem;
-    }
-}
-
-.project-info {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 5px;
-
-    img {
-        width: 10rem;
-        height: auto;
-    }
-}
-
-.project-item {
-    border: 1px solid black;
-    border-radius: 32px;
-}
-
-.project-tags {
-    z-index: 10;
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: end;
-    gap: 5px;
-}
-
-.project-tag {
-    font-size: 24pt;
-    font-family: 'DM Mono';
-    font-weight: 300;
-    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
-    border: 1px solid black;
-    border-radius: 20px;
+#projects-header {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  padding: 0px 120px;
+  align-items: center;
 }

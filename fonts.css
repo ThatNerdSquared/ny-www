@@ -1,40 +1,17 @@
 @font-face {
-    font-family: 'Spectral';
-    src: url('./fonts/Spectral-Regular.ttf') format('truetype');
-    font-weight: 400;
+    font-family: 'Imbue';
+    src: url('./fonts/Imbue.woff2') format('woff2');
 }
 @font-face {
-    font-family: 'Spectral';
-    src: url('./fonts/Spectral-Light.ttf') format('truetype');
-    font-weight: 300;
+    font-family: 'Playfair';
+    src: url('./fonts/PlayfairRomanVF.woff2') format('woff2');
 }
 @font-face {
-    font-family: 'Spectral';
-    src: url('./fonts/Spectral-Bold.ttf') format('truetype');
-    font-weight: 700;
-}
-@font-face {
-    font-family: 'Spectral';
-    src: url('./fonts/Spectral-Medium.ttf') format('truetype');
-    font-weight: 500;
-}
-@font-face {
-    font-family: 'Cedarville Cursive';
-    src: url('./fonts/CedarvilleCursive-Regular.ttf') format('truetype');
-    font-weight: 400;
-}
-@font-face {
-    font-family: 'Courier New';
-    src: url('./fonts/Courier New.ttf') format('truetype');
-    font-weight: 400;
-}
-@font-face {
-    font-family: 'Against';
-    src: url('./fonts/Against-Regular.otf') format('truetype');
-    font-weight: 400;
+    font-family: 'Playfair';
+    src: url('./fonts/PlayfairItalicVF.woff2') format('woff2');
+    font-style: italic;
 }
 @font-face {
     font-family: 'DM Mono';
     src: url('./fonts/DMMono-Regular.ttf') format('truetype');
-    font-weight: 400;
 }
