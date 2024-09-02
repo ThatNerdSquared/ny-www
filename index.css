@@ -64,6 +64,10 @@ h1 {
   margin: 0;
 }
 
+h1::after {
+  content: '\00a0//'
+}
+
 #projects-header {
   display: grid;
   grid-template-columns: 1fr auto;
@@ -116,4 +120,38 @@ h1 {
    * for why this hack is necessary
    */
   grid-row: 1 / 999;
+}
+
+#observatory {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 148px 170px;
+}
+
+#observatory-header {
+  display: grid;
+  grid-auto-flow: row;
+  grid-gap: 30px;
+  margin-bottom: 10px;
+
+  h1 {
+    margin-left: 20px;
+  }
+
+  .info-box {
+    text-align: right;
+  }
+}
+
+#observatory-essays, #observatory-pinned {
+  grid-row: 1;
+
+  display: grid;
+  grid-auto-flow: row;
+  height: fit-content;
+
+}
+
+#observatory-essays {
+  padding-top: 40px;
 }

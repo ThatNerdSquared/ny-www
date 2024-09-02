@@ -1,14 +1,20 @@
 .info-box {
-  padding: 21px;
+  padding: 12px 21px;
   border: 3px solid #000000;
   background-color: #ffffff;
-  margin-left: 20px;
-  margin-right: 20px;
+  margin: 0px 20px;
 
   p {
     margin: 0;
     font-size: 26px;
   }
+}
+
+.default-button, .observatory-post {
+  border-top: 3px solid black;
+  border-bottom: 3px solid black;
+  border-left: 9px solid black;
+  border-right: 9px solid black;
 }
 
 .default-button {
@@ -18,8 +24,28 @@
   text-align: center;
 
   padding: 10px 20px;
-  border-top: 3px solid black;
-  border-bottom: 3px solid black;
-  border-left: 9px solid black;
-  border-right: 9px solid black;
+}
+
+.observatory-post {
+  margin: 10px 18px;
+  padding: 8px;
+
+  p {
+    margin: 0px;
+    margin-top: 8px;
+  }
+}
+
+.post-title {
+  font-size: 26px;
+}
+
+.post-desc {
+  font-size: 20px;
+}
+
+.post-date {
+  font-size: 18px;
+  font-style: italic;
+  text-align: right;
 }
