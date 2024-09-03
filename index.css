@@ -155,3 +155,26 @@ h1::after {
 #observatory-essays {
   padding-top: 40px;
 }
+
+#footer {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  margin: 200px 0px;
+  padding: 63px 50px;
+  border: 3px solid #000000;
+
+  div {
+    display: inline-grid;
+    grid-template-columns: repeat(3, fit-content(100%));
+    height: fit-content;
+    align-self: end;
+  }
+
+  div > p {
+    margin: 0px;
+  }
+
+  div > p:last-child {
+    grid-column: 1 / -1;
+  }
+}
