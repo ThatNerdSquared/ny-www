@@ -7,6 +7,8 @@ body {
 
 #main-view {
   max-width: 1400px;
+  background-image: url(./public/bg-doubleslash.svg);
+  background-repeat: no-repeat;
 }
 
 #main-title {
@@ -77,10 +79,11 @@ h1::after {
 
 #projects-catalog {
   display: grid;
-  grid-template-columns: 1fr 3px 1fr;
+  grid-template-columns: 1fr 1fr;
   margin: 40px 96px;
   align-items: center;
   border: 3px solid #000000;
+  background-color: #ffffff;
 
   input, .project-content {
     display: none;
@@ -89,8 +92,14 @@ h1::after {
   /* show the next project info when the corresponding "tab" is checked */
   input:checked+.project-content {
     display: inline-grid;
-    grid-row: 1 / -1;
-    grid-column: 3 / 3;
+    /*
+     * see https://stackoverflow.com/questions/44052336/make-a-grid-item-span-to-the-last-row-column-in-implicit-grid
+     * for why this hack is necessary
+     */
+    grid-row: 1 / 999;
+    grid-column: 2 / 2;
+    border-left: 3px solid #000000;
+    height: 100%;
   }
 
   label {
@@ -109,17 +118,6 @@ h1::after {
     background: linear-gradient(black 0 0) bottom right / 8px 26px;
     background-repeat: no-repeat;
   }
-}
-
-#catalog-divider {
-  height: 100%;
-  border-right: 3px solid #000000;
-  grid-column: 2 / 3;
-  /*
-   * see https://stackoverflow.com/questions/44052336/make-a-grid-item-span-to-the-last-row-column-in-implicit-grid
-   * for why this hack is necessary
-   */
-  grid-row: 1 / 999;
 }
 
 #observatory {
@@ -162,6 +160,7 @@ h1::after {
   margin: 200px 0px;
   padding: 63px 50px;
   border: 3px solid #000000;
+  background-color: #ffffff;
 
   div {
     display: inline-grid;

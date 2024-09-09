@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg">
+  <line
+    x1="0" y1="110%"
+    x2="70%" y2="-10%"
+    stroke="#D1EFFF"
+    stroke-width="30px"
+  />
+  <line
+    x1="12%" y1="110%"
+    x2="82%" y2="-10%"
+    stroke="#D1EFFF"
+    stroke-width="30px"
+  />
+</svg>
