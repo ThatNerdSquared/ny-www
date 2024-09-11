@@ -1,4 +1,5 @@
 .DS_Store
+**/*.swp
 session.vim
 
 v1/node_modules

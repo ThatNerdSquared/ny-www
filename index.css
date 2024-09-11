@@ -12,7 +12,7 @@ body {
 }
 
 #main-title {
-  font-size: 224px;
+  font-size: clamp(120px, 40.976px + 13.073vw, 224px);
   text-transform: uppercase;
 }
 
@@ -20,12 +20,12 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 50px;
-  padding: 158px 110px;
+  padding: 158px clamp(30px, 8vw, 110px);
   align-items: center;
 }
 
 #subtitle-box {
-  font-size: 42px;
+  font-size: clamp(32px, 28.341px + 0.976vw, 42px);
   background-color: #ffffff;
   border: 3px solid #000000;
   margin-right: 30px;
@@ -48,18 +48,16 @@ p {
 
 #media-buttons {
   display: grid;
+  justify-content: end;
+  margin: 0px 20px;
+  width: calc(100% - 40px);
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   grid-gap: 16px;
-  grid-template-columns: auto auto;
-  width: fit-content;
-  justify-self: end;
-
-  margin-left: 20px;
-  margin-right: 20px;
 }
 
 h1 {
   font-family: 'Imbue';
-  font-size: 100px;
+  font-size: clamp(70px, 59.024px + 2.927vw, 100px);
   font-variation-settings: 'opsz' 100;
   font-weight: 400;
   line-height: 88%;
@@ -73,14 +71,14 @@ h1::after {
 #projects-header {
   display: grid;
   grid-template-columns: 1fr auto;
-  padding: 0px 120px;
+  padding: 0px clamp(26px, 8vw, 120px);
   align-items: center;
 }
 
 #projects-catalog {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  margin: 40px 96px;
+  margin: 40px clamp(10px, 2vw, 96px);
   align-items: center;
   border: 3px solid #000000;
   background-color: #ffffff;
@@ -123,7 +121,7 @@ h1::after {
 #observatory {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  padding: 148px 170px;
+  padding: 148px clamp(8px, 6vw, 170px);
 }
 
 #observatory-header {
@@ -147,25 +145,30 @@ h1::after {
   display: grid;
   grid-auto-flow: row;
   height: fit-content;
-
 }
 
 #observatory-essays {
   padding-top: 40px;
 }
 
-#footer {
+footer {
   display: grid;
   grid-template-columns: auto 1fr;
   margin: 200px 0px;
   padding: 63px 50px;
   border: 3px solid #000000;
   background-color: #ffffff;
+  gap: 15px;
+
+  h1 {
+    font-size: 100px;
+  }
 
   div {
-    display: inline-grid;
-    grid-template-columns: repeat(3, fit-content(100%));
-    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 5px;
     align-self: end;
   }
 
@@ -174,6 +177,6 @@ h1::after {
   }
 
   div > p:last-child {
-    grid-column: 1 / -1;
+    flex-basis: 100%;
   }
 }

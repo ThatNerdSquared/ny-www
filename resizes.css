@@ -1,0 +1,41 @@
+@media screen and (max-width: 1035px) {
+  #main-header {
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+  }
+
+  #about-column {
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-gap: 16px;
+  }
+
+  #projects-header {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  #media-buttons {
+    width: auto;
+  }
+
+  #subtitle-box, #media-buttons, #about-column .info-box, #projects-header .info-box {
+    margin: 0px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  #observatory {
+    grid-template-columns: 1fr;
+  }
+
+  #observatory-essays {
+    padding-top: 0;
+    grid-row: 2;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  footer {
+    grid-template-columns: 1fr;
+  }
+}
