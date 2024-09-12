@@ -24,6 +24,16 @@
 }
 
 @media screen and (max-width: 850px) {
+  #projects-catalog {
+    grid-template-columns: 1fr;
+
+    input:checked+.project-content {
+      grid-row: auto;
+      grid-column: 1;
+      border-left: none;
+    }
+  }
+
   #observatory {
     grid-template-columns: 1fr;
   }
