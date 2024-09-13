@@ -7,7 +7,7 @@ body {
 
 #main-view {
   max-width: 1400px;
-  background-image: url(./public/bg-doubleslash.svg);
+  background-image: url(../bg-doubleslash.svg);
   background-repeat: no-repeat;
 }
 
