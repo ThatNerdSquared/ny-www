@@ -3,20 +3,21 @@ weight = 2
 [extra]
 id = "breeze"
 name = "Breeze"
-desc = "An extremely minimal todo app"
+desc = "extremely focused todo app"
 hero_imgs = ["/projects/breeze.png"]
 stack = ["flutter", "dart", "riverpod" ]
 links = { "github repo" = "https://github.com/ThatNerdSquared/breeze" }
 +++
 
-Breeze is a sort of antithesis to what I see in a lot of task management
-software these days: an overproliferation of features. I tried to strip down the
-concept of a task manager and figure out what essential components an app in
-this space really needs. The result shown above is a todo app that allows you to
-add tasks, schedule tasks, and cycle them through different statuses (todo, wip,
-done). No reordering, sorting, tagging, filtering... nothing that could create
-extra vectors of procrastination.
+Breeze is an antithesis to the feature overload present in many todo apps today.
+My goal with this project was to create a stripped-down task manager. In the
+process, I wanted to figure out which components of the task manager are
+essential and why.
 
-This is just the first iteration of my experimentation on this topic. I have
-some interesting continuations that I'm tinkering with - stay tuned for more
-soon.
+The result shown above is a todo app that allows you to add and schedule tasks,
+as well as update their status (todo, wip, done). No reordering, sorting,
+tagging, filtering... nothing that could create extra vectors of
+procrastination.
+
+This is just the first iteration of my thinking on this topic. I have some
+interesting designs that I'm still tinkering with - stay tuned for more soon.
