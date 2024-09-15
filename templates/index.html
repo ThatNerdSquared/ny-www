@@ -62,16 +62,30 @@
           </div>
         </div>
         <div id="projects-catalog">
-          <label for="timers">Timers for Raycast</label>
-          <input type="radio" id="timers" name="tab" checked="checked" />
-          <div class="project-content">
-            timers for raycast content
-          </div>
-          <label for="peregrine">Peregrine</label>
-          <input type="radio" id="peregrine" name="tab" checked="checked" />
-          <div class="project-content">
-            peregrine content
-          </div>
+          {% set section = get_section(path="projects/_index.md") %}
+          {% for page in section.pages %}
+              <label for="{{ page.extra.id }}">{{ page.extra.name }}</label>
+              <input type="radio" id="{{ page.extra.id }}" name="tab" checked="checked" />
+              <div class="project-content">
+                  <p class="project-desc">{{ page.extra.desc }}</p>
+                  <div class="project-imgs">
+                      {% for item in page.extra.hero_imgs %}
+                      <img src="{{ item }}" alt="{{ page.extra.name }} screenshot" />
+                      {% endfor %}
+                  </div>
+                  <p>stack:
+                      {% for item in page.extra.stack %}
+                        {{ item }} //
+                      {% endfor %}
+                  </p>
+                  <p>links:
+                      {% for text, link in page.extra.links %}
+                      <a href="{{ link }}" target="_blank">{{ text }}</a> //
+                      {% endfor %}
+                  </p>
+                  {{ page.content | safe }}
+              </div>
+          {% endfor %}
         </div>
       </div>
       <div id="observatory">

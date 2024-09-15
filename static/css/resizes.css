@@ -25,12 +25,14 @@
 
 @media screen and (max-width: 850px) {
   #projects-catalog {
+    height: auto;
     grid-template-columns: 1fr;
 
     input:checked+.project-content {
       grid-row: auto;
       grid-column: 1;
       border-left: none;
+      border-bottom: 3px solid #000000;
     }
   }
 
