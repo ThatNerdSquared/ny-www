@@ -77,7 +77,6 @@ h1::after {
 
 #projects-catalog {
   display: grid;
-  height: 600px;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   margin: 40px clamp(10px, 2vw, 96px);
   align-items: center;
@@ -110,7 +109,7 @@ h1::after {
   }
 
   label:hover, label:has(+input:checked) {
-    /* adjust margin to accomodate underline border without layout shift */
+    cursor: pointer;
     margin-bottom: 8px;
     border-bottom: 2px solid #000000;
     background: linear-gradient(black 0 0) bottom right / 8px 26px;
@@ -120,7 +119,8 @@ h1::after {
 
 .project-content {
     padding: 20px;
-    height: calc(100% - 40px);
+    height: 0;
+    min-height: calc(100% - 40px);
     overflow-y: auto;
 
     .project-imgs {
@@ -135,8 +135,13 @@ h1::after {
       }
     }
 
-    p, li {
-      margin: 5px;
+    p {
+      margin: 7px 0px;
+      font-size: 20px;
+    }
+
+    li {
+      margin: 4px;
       font-size: 20px;
     }
 
