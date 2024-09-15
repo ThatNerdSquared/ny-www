@@ -20,7 +20,7 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 50px;
-  padding: 158px clamp(30px, 8vw, 110px);
+  padding: 158px clamp(15px, -1.2348rem + 9.2683vw, 110px);
   align-items: center;
 }
 
