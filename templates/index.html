@@ -65,7 +65,14 @@
           {% set section = get_section(path="projects/_index.md") %}
           {% for page in section.pages %}
           <label for="{{ page.extra.id }}">{{ page.extra.name }}</label>
-          <input type="radio" id="{{ page.extra.id }}" name="tab" checked="checked" />
+          <input
+              type="radio"
+              id="{{ page.extra.id }}"
+              name="tab"
+              {% if loop.index0 == 0 %}
+              checked="checked"
+              {% endif %}
+              />
           <div class="project-content">
             <p class="project-desc">{{ page.extra.desc }}</p>
             <div class="project-imgs">
