@@ -1,8 +1,64 @@
+:root {
+  --default-border: 3px solid #000000;
+  --thick-border: 9px solid #000000;
+  --default-bg-color: #ffffff;
+  --default-ny-color: #D1EFFF;
+  --link-color: #3462bf;
+  --hover-link-color: #a5bad9;
+}
+
 body {
   /* reset */
   margin: 0;
   display: grid;
   justify-items: center;
+}
+
+h1 {
+  font-family: 'Imbue';
+  font-size: clamp(70px, 59.024px + 2.927vw, 100px);
+  font-variation-settings: 'opsz' 100;
+  font-weight: 400;
+  line-height: 88%;
+  margin: 0;
+}
+
+h1::after {
+  content: '\00a0//'
+}
+
+p, li {
+  font-family: 'Playfair';
+}
+
+footer {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  margin: 200px 0px;
+  padding: 63px 50px;
+  border: var(--default-border);
+  background-color: var(--default-bg-color);
+  gap: 15px;
+
+  h1 {
+    font-size: 100px;
+  }
+
+  div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 5px;
+    align-self: end;
+  }
+
+  div > p {
+    margin: 0px;
+  }
+
+  div > p:last-child {
+    flex-basis: 100%;
+  }
 }
 
 #main-view {
@@ -26,8 +82,8 @@ body {
 
 #subtitle-box {
   font-size: clamp(32px, 28.341px + 0.976vw, 42px);
-  background-color: #ffffff;
-  border: 3px solid #000000;
+  background-color: var(--default-bg-color);
+  border: var(--default-border);
   margin-right: 30px;
 
   p {
@@ -42,10 +98,6 @@ body {
   grid-gap: 27px;
 }
 
-p, li {
-  font-family: 'Playfair';
-}
-
 #media-buttons {
   display: grid;
   justify-content: end;
@@ -53,19 +105,6 @@ p, li {
   width: calc(100% - 40px);
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   grid-gap: 16px;
-}
-
-h1 {
-  font-family: 'Imbue';
-  font-size: clamp(70px, 59.024px + 2.927vw, 100px);
-  font-variation-settings: 'opsz' 100;
-  font-weight: 400;
-  line-height: 88%;
-  margin: 0;
-}
-
-h1::after {
-  content: '\00a0//'
 }
 
 #projects-header {
@@ -80,8 +119,8 @@ h1::after {
   grid-template-columns: repeat(2, minmax(0, 1fr));
   margin: 40px clamp(10px, 2vw, 96px);
   align-items: center;
-  border: 3px solid #000000;
-  background-color: #ffffff;
+  border: var(--default-border);
+  background-color: var(--default-bg-color);
 
   input, .project-content {
     display: none;
@@ -96,7 +135,7 @@ h1::after {
      */
     grid-row: 1 / 60;
     grid-column: 2 / 2;
-    border-left: 3px solid #000000;
+    border-left: var(--default-border);
   }
 
   label {
@@ -146,10 +185,8 @@ h1::after {
     }
 
     a {
-      /* font-weight: 700; */
-      color: black;
       text-decoration: none;
-      color: #3462bf;
+      color: var(--link-color);
     }
 
     a::before {
@@ -163,7 +200,7 @@ h1::after {
     }
 
     a:hover {
-      color: #a5bad9;
+      color: var(--hover-link-color);
     }
 
     .project-desc {
@@ -202,34 +239,4 @@ h1::after {
 
 #observatory-essays {
   padding-top: 40px;
-}
-
-footer {
-  display: grid;
-  grid-template-columns: auto 1fr;
-  margin: 200px 0px;
-  padding: 63px 50px;
-  border: 3px solid #000000;
-  background-color: #ffffff;
-  gap: 15px;
-
-  h1 {
-    font-size: 100px;
-  }
-
-  div {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 5px;
-    align-self: end;
-  }
-
-  div > p {
-    margin: 0px;
-  }
-
-  div > p:last-child {
-    flex-basis: 100%;
-  }
 }
