@@ -64,27 +64,27 @@
         <div id="projects-catalog">
           {% set section = get_section(path="projects/_index.md") %}
           {% for page in section.pages %}
-              <label for="{{ page.extra.id }}">{{ page.extra.name }}</label>
-              <input type="radio" id="{{ page.extra.id }}" name="tab" checked="checked" />
-              <div class="project-content">
-                  <p class="project-desc">{{ page.extra.desc }}</p>
-                  <div class="project-imgs">
-                      {% for item in page.extra.hero_imgs %}
-                      <img src="{{ item }}" alt="{{ page.extra.name }} screenshot" />
-                      {% endfor %}
-                  </div>
-                  <p>stack:
-                      {% for item in page.extra.stack %}
-                        {{ item }} //
-                      {% endfor %}
-                  </p>
-                  <p>links:
-                      {% for text, link in page.extra.links %}
-                      <a href="{{ link }}" target="_blank">{{ text }}</a> //
-                      {% endfor %}
-                  </p>
-                  {{ page.content | safe }}
-              </div>
+          <label for="{{ page.extra.id }}">{{ page.extra.name }}</label>
+          <input type="radio" id="{{ page.extra.id }}" name="tab" checked="checked" />
+          <div class="project-content">
+            <p class="project-desc">{{ page.extra.desc }}</p>
+            <div class="project-imgs">
+              {% for item in page.extra.hero_imgs %}
+              <img src="{{ item }}" alt="{{ page.extra.name }} screenshot" />
+              {% endfor %}
+            </div>
+            <p>stack:
+            {% for item in page.extra.stack %}
+            {{ item }} //
+            {% endfor %}
+            </p>
+            <p>links:
+            {% for text, link in page.extra.links %}
+            <a href="{{ link }}" target="_blank">{{ text }}</a> //
+            {% endfor %}
+            </p>
+            {{ page.content | safe }}
+          </div>
           {% endfor %}
         </div>
       </div>
@@ -99,39 +99,28 @@
             </div>
           </div>
           <div id="observatory-pinned">
+            {% set observatory_pinned = get_section(path="observatory/pinned/_index.md") %}
+            {% for page in observatory_pinned.pages %}
             <div class="observatory-post">
-              <p class="post-title"><strong>[NEWS] Close of Business: End of Summer</strong></p>
-              <p class="post-desc">A temporary close of business from August 19th-26th.</p>
-              <p class="post-date">18 August 2024</p>
+              <p class="post-title"><strong>{{ page.extra.title }}</strong></p>
+              <p class="post-desc">{{ page.extra.desc }}</p>
+              <p class="post-date">{{ page.extra.date }}</p>
             </div>
-            <div class="observatory-post">
-              <p class="post-title"><strong>a new look</strong></p>
-              <p class="post-desc">redesigning nathanyeung.ca, 11 drafts later.</p>
-              <p class="post-date">05 July 2024</p>
-            </div>
+            {% endfor %}
           </div>
         </div>
         <div id="observatory-essays">
-          <div class="observatory-post">
-            <p class="post-title"><strong>lorem ipsum dolor timezone-locked date calculations in JS</strong></p>
-            <p class="post-desc">3 timezones, 2 APIs, and the madness that ensues.</p>
-            <p class="post-date">05 August 2024</p>
+          <div class="info-box">
+            <p>Coming soon...</p>
           </div>
+          {% set observatory_essays = get_section(path="observatory/essays/_index.md") %}
+          {% for page in observatory_essays.pages %}
           <div class="observatory-post">
-            <p class="post-title"><strong>a new look</strong></p>
-            <p class="post-desc">redesigning nathanyeung.ca, 11 drafts later.</p>
-            <p class="post-date">05 July 2024</p>
+            <p class="post-title"><strong>{{ page.extra.title }}</strong></p>
+            <p class="post-desc">{{ page.extra.desc }}</p>
+            <p class="post-date">{{ page.extra.date }}</p>
           </div>
-          <div class="observatory-post">
-            <p class="post-title"><strong>a new look</strong></p>
-            <p class="post-desc">redesigning nathanyeung.ca, 11 drafts later.</p>
-            <p class="post-date">05 July 2024</p>
-          </div>
-          <div class="observatory-post">
-            <p class="post-title"><strong>a new look</strong></p>
-            <p class="post-desc">redesigning nathanyeung.ca, 11 drafts later.</p>
-            <p class="post-date">05 July 2024</p>
-          </div>
+          {% endfor %}
         </div>
       </div>
       <footer>
