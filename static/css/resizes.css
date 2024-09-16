@@ -25,7 +25,6 @@
 
 @media screen and (max-width: 850px) {
   #projects-catalog {
-    height: auto;
     grid-template-columns: 1fr;
 
     input:checked+.project-content {
@@ -34,6 +33,10 @@
       border-left: none;
       border-bottom: var(--default-border);
     }
+  }
+
+  .project-content {
+    height: auto;
   }
 
   #observatory {
