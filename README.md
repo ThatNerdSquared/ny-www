@@ -1,3 +1,3 @@
 # ny-www
 
-Personal site. Built with vanilla HTML, CSS, and a teeny tiny bit of JS, because frameworks are overrated.
+personal site. built with vanilla html and css, because frameworks are overrated.

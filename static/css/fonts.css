@@ -1,17 +1,21 @@
 @font-face {
     font-family: 'Imbue';
     src: url('../fonts/Imbue.woff2') format('woff2');
+    font-display: swap;
 }
 @font-face {
     font-family: 'Playfair';
     src: url('../fonts/PlayfairRomanVF.woff2') format('woff2');
+    font-display: swap;
 }
 @font-face {
     font-family: 'Playfair';
     src: url('../fonts/PlayfairItalicVF.woff2') format('woff2');
     font-style: italic;
+    font-display: swap;
 }
 @font-face {
     font-family: 'DM Mono';
     src: url('../fonts/DMMono-Regular.ttf') format('truetype');
+    font-display: swap;
 }
